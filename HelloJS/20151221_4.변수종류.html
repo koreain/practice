@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.변수종류</title>
+    <script>
+        //전역변수, 지역변수, 매개변수(인자,파라미터)
+        var global1="전역변수1";
+        window.onload=function(){
+            alert("window onload 실행");
+            local1="지역변수1";
+        }
+
+        function func1(){
+            var local2="지역변수2";
+            console.log("local2 ="+local2);
+            console.log("local1 ="+local1);
+            console.log("global1 ="+global1);
+        }
+//        console.log("global1 = " + global1);
+//        document.write(func1);
+
+        function func2(num1,num2){
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
