@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0.형변환</title>
+    <script>
+
+        /*
+        나이를 입력받고 여기에 30을 더한 값을 알림 창으로 출력
+
+         var age=window.prompt("나이를 입력해주세요.");
+         //age+=30;
+         age = parseInt(age)+30;
+         alert("age = "+ age);
+         */
+        var d = new Date();
+        var age=window.prompt("나이를 입력해주세요.");
+        //age+=30;
+        birth= d.getFullYear()-parseInt(age)+1;
+        document.write("당신의 출생년도는 "+birth+"년 입니다");
+
+        /*
+        형변환 종류
+        1)암시적 형변환 : 변경주체-자바스크립트 엔진, 변경방식-자동(암시적)
+        2)명시적 형변환 : 변경주체-개발자,  변경방식-수동(명시적)
+         */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
