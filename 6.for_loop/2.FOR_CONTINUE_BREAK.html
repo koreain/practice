@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.FOR_CONTINUE_BREAK</title>
+    <script>
+        /*
+            Continue: 반복문에서 continue문 ==> continue 이후 구분 미실행.
+                                                다음 루프로 이동.
+         */
+        for(var i=0; i<=10; i++){
+            continue;
+            document.write(i+"<br>");
+        }
+        document.write("최종 i="+i+"<br>");
+        /*
+        break: 실행구문에서 break문 ==> for문 그대로 정지
+                                        for문 루프빠져나옴
+         */
+        for(var i=0; i<=10; i++){
+            break;
+            document.write(i+"<br>");
+        }
+        document.write("최종 i="+i+"<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

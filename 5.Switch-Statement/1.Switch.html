@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.Switch</title>
+    <srcript src="/libs/jquery-1.11.3.min.js"></srcript>
+    <script>
+        $(document).ready(function()
+        {//랜덤수 생성(1~10)
+            $("#start").click(function(){  //id는 jQuery 연결시 '#'을 붙여서 호출
+                var luckyValue=parseInt(Math.random()*10+1);
+                switch(luckyValue){
+                    case 3:
+                        document.write("당첨! 맥북 프로");
+                        break;
+                    case 5:
+                        document.write("당첨! 아이폰6S+");
+                        break;
+                    case 8:
+                        document.write("당첨! 애플와치");
+                        break;
+                    default :
+                        document.write("꽝!");
+                        break;
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="start">
+        추첨
+    </button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0.Switch</title>
+    <script>
+        /*
+         switch ==> if : 사용가능
+         ==========
+         다중 if~else 대신 사용함. 가독성 있는 코드작성.
+
+         if ==> switch : 오직 특별한 경우만 가능.
+         */
+
+        var luckyValue=window.prompt("행운의 번호를 고르세요.")
+        /*
+        if(luckyValue=="3")
+            document.write("당첨! 맥북 프로");
+        else if(luckyValue=="2")
+            document.write("당첨! 아이폰6S+");
+        else if(luckyValue=="1")
+            document.write("당첨! 애플와치");
+        else
+        document.write("꽝!");
+        */
+
+        switch(luckyValue)
+        {
+            case "3":
+                document.write("당첨! 맥북 프로");
+                break;
+            case "2":
+                document.write("당첨! 아이폰6S+");
+                break;
+            case "1":
+                document.write("당첨! 애플와치");
+                break;
+            default :
+                document.write("꽝!");
+                break;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
